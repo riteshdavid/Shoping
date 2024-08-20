@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopee</title>
+</head>
+<body>
+    <header class="header container">
+        <nav>
+            <h1>Shopee</h1>
+            <ul class="header__menu">
+                
+                <li><a class="header__link" href="#"><!--<i class="bi bi-house-door"></i> -->Home</a></li>
+                <li><button class="header__link" href="#" aria-label="theme-toggle btn"
+                    id="theme-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                      </svg></button></li>
+                <li><a class="header__link" href="#">Catalog</a></li>  <!--<i class="bi bi-grid-3x2-gap"></i> -->
+                <li><a class="header__link" href="#"><!--<i class="bi bi-egg"></i> -->Diets</a></li>
+                <li><a class="header__link" href="#"><!--<svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" fill="currentColor" class="bi bi-person-walking" viewBox="0 0 16 16">
+                    <path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M6.44 3.752A.75.75 0 0 1 7 3.5h1.445c.742 0 1.32.643 1.243 1.38l-.43 4.083a1.8 1.8 0 0 1-.088.395l-.318.906.213.242a.8.8 0 0 1 .114.175l2 4.25a.75.75 0 1 1-1.357.638l-1.956-4.154-1.68-1.921A.75.75 0 0 1 6 8.96l.138-2.613-.435.489-.464 2.786a.75.75 0 1 1-1.48-.246l.5-3a.75.75 0 0 1 .18-.375l2-2.25Z"/>
+                    <path d="M6.25 11.745v-1.418l1.204 1.375.261.524a.8.8 0 0 1-.12.231l-2.5 3.25a.75.75 0 1 1-1.19-.914zm4.22-4.215-.494-.494.205-1.843.006-.067 1.124 1.124h1.44a.75.75 0 0 1 0 1.5H11a.75.75 0 0 1-.531-.22Z"/>
+                  </svg> -->Workouts</a></li>
+                <li><a class="header__link" href="#"><!--<i class="bi bi-person"></i> -->Profile</a></li>
+            </ul>
+            <button aria-label="mobile nav button" class="header__bars">
+                <i class="bi bi-list" id="menu-bar"></i>
+            </button>
+        </nav>
+    </header>
+                
+                   
+            
+            
+            
+       
+        <div class="mobile-nav" id="navmenu">
+            <nav>    
+                <ul class="mobile-nav__menu">
+                    <li><a class="mobile-nav__link" href="#"><i class="bi bi-house-door"></i>Home</a></li>
+                    <li><button class="mobile-nav__link" href="#" aria-label="theme-toggle btn"
+                        id="theme-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                        <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+                      </svg>Mode</button></li>
+                    <li><a class="mobile-nav__link" href="#"><i class="bi bi-grid-3x2-gap"></i>Catalog</a></li>
+                    <li><a class="mobile-nav__link" href="#"><i class="bi bi-egg"></i>Diets</a></li>
+                    <li><a class="mobile-nav__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" fill="currentColor" class="bi bi-person-walking" viewBox="0 0 16 16">
+                        <path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M6.44 3.752A.75.75 0 0 1 7 3.5h1.445c.742 0 1.32.643 1.243 1.38l-.43 4.083a1.8 1.8 0 0 1-.088.395l-.318.906.213.242a.8.8 0 0 1 .114.175l2 4.25a.75.75 0 1 1-1.357.638l-1.956-4.154-1.68-1.921A.75.75 0 0 1 6 8.96l.138-2.613-.435.489-.464 2.786a.75.75 0 1 1-1.48-.246l.5-3a.75.75 0 0 1 .18-.375l2-2.25Z"/>
+                        <path d="M6.25 11.745v-1.418l1.204 1.375.261.524a.8.8 0 0 1-.12.231l-2.5 3.25a.75.75 0 1 1-1.19-.914zm4.22-4.215-.494-.494.205-1.843.006-.067 1.124 1.124h1.44a.75.75 0 0 1 0 1.5H11a.75.75 0 0 1-.531-.22Z"/>
+                      </svg>Workouts</a></li>
+                    <li><a class="mobile-nav__link" href="#"><i class="bi bi-person"></i>Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+
+    <section class="container">
+        <div class="gallery">
+        <div class="card_container">
+            <div class="item_card">
+                <img src="./no_background/pic_1.png" alt="product_1">
+                
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_5.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_2.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_3.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_4.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_1.png" alt="product_1">
+                
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_5.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_2.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_3.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_4.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_1.png" alt="product_1">
+                
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_5.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_2.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_3.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_4.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_1.png" alt="product_1">
+                
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_5.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_2.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_3.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+            <div class="item_card">
+                <img src="./no_background/pic_4.png" alt="product_1">
+                <h3>headphone</h3>
+                <h2>Boat 710 Lighting bolt headphone</h2>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <p>5 Reviews</p>
+
+                </div>
+                <h4>$471.48</h4>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="container followup">
+        <div>
+            <div class="circle_mail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
+                    <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882zM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765z"/>
+                  </svg>
+            </div>
+            <h2>Join Now and get 10% off your next purchase!</h2>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </section>
+
+    <footer class="">
+        <ul>
+            <h3>COMPANY</h3>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Affliate</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul>
+            <h3>SHOP</h3>
+            <li><a href="#">Televisions</a></li>
+            <li><a href="#">Fridges</a></li>
+            <li><a href="#">Washing Machine</a></li>
+            <li><a href="#">Fans</a></li>
+            <li><a href="#">Air Conditioners</a></li>
+            <li><a href="#">Laptops</a></li>
+        </ul>
+        <ul>
+            <h3>HELP</h3>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Find a Store</a></li>
+            <li><a href="#">Legal & Privacy</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Gift Card</a></li>
+        </ul>
+        <ul>
+            <h3>MY ACCOUNT</h3>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">My Order History</a></li>
+            <li><a href="#">My Wish List</a></li>
+            <li><a href="#">Order Tracking</a></li>
+        </ul>
+        <ul>
+            <h3>CONTACT INFO</h3>
+            <h4>+84 2500 88844</h4>
+            <li style="margin:1rem 0;"><a href="#">Mon To Sun 10:00 AM To 6:00 PM</a></li>
+            <h4 id="highlighted">support@example.com</h4>
+            <li><a href="#">48 West Avenue Drive</a></li>
+            <li><a href="#">Athburn,VA 20178</a></li>
+        </ul>
+    </footer>
+    <section class="copywrite" style="height:3vh;">
+        <p style="margin-left: 20%;font-size:12px;">&#169 2024 Shopee Pvt Ltd. All Rights Reserved.</p>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
