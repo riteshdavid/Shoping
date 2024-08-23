@@ -128,7 +128,7 @@
   .header nav {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   .header__menu {
@@ -217,10 +217,14 @@
     flex-direction: column;
     /* justify-content: flex-start; */
     align-items: start;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding: 2rem;
   }
   .item_card img {
-    width: 20em;
-    height: 25em;
+    width: 10em;
+    height: 10em;
+    margin: auto;
   }
   .item_card h3{
     
@@ -331,6 +335,9 @@
     .container {
       max-width: 640px;
     }
+    footer{
+      width: 100vw;
+    }
     footer ul{
       font-size: calc(var(--size-base)*0.8);
     }
@@ -397,7 +404,14 @@
         font-size: var(--size-sm);
       }
       .card_container{
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto;
+      }
+      .item_card img {
+        width: 8em;
+        height: 9em;
+      }
+      footer{
+        width: 100vw;
       }
   }
   
