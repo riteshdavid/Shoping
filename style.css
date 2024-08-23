@@ -218,7 +218,7 @@
     /* justify-content: flex-start; */
     align-items: start;
     border: 1px solid grey;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     padding: 2rem;
   }
   .item_card img {
